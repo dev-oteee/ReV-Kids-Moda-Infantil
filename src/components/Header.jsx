@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { img } from '../assets'
 
 const WA_LINK = 'https://chat.whatsapp.com/IsmICIEcUpt3tDGXumGf2W'
 
@@ -33,7 +34,7 @@ export default function Header() {
 
         <a href="#" className="flex items-center gap-2.5 shrink-0">
           <img
-            src="/img/logo_perfil.webp"
+            src={img('logo_perfil.webp')}
             alt="R&V Kids Moda Infantil"
             className="h-10 w-10 rounded-full object-cover ring-2 ring-[#e8eef8]"
           />
@@ -53,7 +54,6 @@ export default function Header() {
           ))}
         </ul>
 
-        {/* CTA desktop */}
         <a
           href={WA_LINK}
           target="_blank"
@@ -63,7 +63,6 @@ export default function Header() {
           <WaIcon /> Entrar no Grupo
         </a>
 
-        {/* Hamburguer */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
@@ -75,7 +74,6 @@ export default function Header() {
         </button>
       </nav>
 
-      {/* Menu mobile */}
       {menuOpen && (
         <div className="md:hidden border-t border-[#e8eef8] bg-white px-5 pb-5 pt-3">
           <ul className="flex flex-col">

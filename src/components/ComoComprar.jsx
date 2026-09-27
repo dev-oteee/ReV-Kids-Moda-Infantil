@@ -34,7 +34,6 @@ export default function ComoComprar() {
           </motion.h2>
         </motion.div>
 
-        {/* Passos */}
         <motion.div
           className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
           variants={staggerContainer}
@@ -53,7 +52,6 @@ export default function ComoComprar() {
           ))}
         </motion.div>
 
-        {/* Endereço + WhatsApp */}
         <motion.div
           id="localizacao"
           className="mt-8 grid gap-4 md:grid-cols-2"
@@ -62,7 +60,6 @@ export default function ComoComprar() {
           whileInView="visible"
           viewport={viewportOnce}
         >
-          {/* Endereço */}
           <motion.div variants={staggerItem} className="benefit-card flex flex-col gap-4">
             <span className="section-label mb-0">Nossa loja</span>
             <div className="flex items-start gap-3">
@@ -83,7 +80,6 @@ export default function ComoComprar() {
             </div>
           </motion.div>
 
-          {/* CTA WhatsApp */}
           <motion.div
             variants={staggerItem}
             className="benefit-card flex flex-col justify-between border-[#bbf7d0] bg-[#f0fdf4]"

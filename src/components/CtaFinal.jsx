@@ -27,7 +27,6 @@ export default function CtaFinal() {
           Acesse o grupo, veja o catálogo completo e faça seu pedido direto.
         </motion.p>
 
-        {/* Lista — fatos reais, sem inventar */}
         <motion.ul variants={staggerItem} className="mt-8 inline-flex flex-col gap-2.5 text-left">
           {[
             'Bermudas e calças do tamanho 2 ao 16 anos',
