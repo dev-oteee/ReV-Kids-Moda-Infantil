@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 export default function VideoIntro({ onFinish }) {
   const videoRef = useRef(null)
-  const [phase, setPhase] = useState('splash') // 'splash' | 'playing' | 'done'
+  const [phase, setPhase] = useState('splash')
 
   const startVideo = () => {
     setPhase('playing')
@@ -29,7 +29,6 @@ export default function VideoIntro({ onFinish }) {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.7, ease: 'easeInOut' }}
         >
-          {/* Vídeo — contain para não cortar, centralizado */}
           <video
             ref={videoRef}
             src="/img/manifestodia12.mp4"
@@ -40,7 +39,6 @@ export default function VideoIntro({ onFinish }) {
             onEnded={finish}
           />
 
-          {/* Tela splash */}
           <AnimatePresence>
             {phase === 'splash' && (
               <motion.div
@@ -72,7 +70,6 @@ export default function VideoIntro({ onFinish }) {
             )}
           </AnimatePresence>
 
-          {/* Botão pular */}
           {phase === 'playing' && (
             <button
               onClick={finish}

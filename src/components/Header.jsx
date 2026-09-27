@@ -31,7 +31,6 @@ export default function Header() {
     }`}>
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
 
-        {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 shrink-0">
           <img
             src="/img/logo_perfil.webp"
@@ -44,7 +43,6 @@ export default function Header() {
           </div>
         </a>
 
-        {/* Nav desktop */}
         <ul className="hidden md:flex items-center gap-7">
           {navLinks.map((l) => (
             <li key={l.href}>

@@ -9,7 +9,6 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-10 md:px-8">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
 
-          {/* Logo + endereço */}
           <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
             <div className="flex items-center gap-2.5">
               <img src="/img/logo_perfil.webp" alt="R&V Kids" className="h-9 w-9 rounded-full object-cover" />
@@ -20,14 +19,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Links âncora */}
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
             <a href="#produtos"     className="hover:text-white transition-colors">Produtos</a>
             <a href="#como-comprar" className="hover:text-white transition-colors">Como Comprar</a>
             <a href="#localizacao"  className="hover:text-white transition-colors">Nossa Loja</a>
           </div>
 
-          {/* Social */}
           <div className="flex items-center gap-3">
             <a href={IG_LINK} target="_blank" rel="noopener noreferrer" aria-label="Instagram"
               className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 hover:border-white/30 transition-colors">

@@ -4,7 +4,6 @@ import { staggerContainer, staggerItem, viewportOnce } from '../animations'
 
 const WA_LINK = 'https://chat.whatsapp.com/IsmICIEcUpt3tDGXumGf2W'
 
-// Dados reais extraídos do IG — ordem por engajamento real
 const produtos = [
   { img: '/img/post_04_92likes.webp', nome: 'Bermuda Cargo Bolso Frontal', sizes: '2 ao 16 anos' },
   { img: '/img/post_01_89likes.webp', nome: 'Bermuda Mauricinho Brim',     sizes: '2 ao 16 anos' },
@@ -42,7 +41,6 @@ export default function Produtos() {
           </motion.p>
         </motion.div>
 
-        {/* Grid */}
         <motion.div
           className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4"
           variants={staggerContainer}
@@ -53,7 +51,6 @@ export default function Produtos() {
           {produtos.map((p) => (
             <motion.div key={p.nome} variants={staggerItem} className="product-card group">
 
-              {/* Imagem */}
               <div className="relative aspect-[3/4] overflow-hidden bg-[#eef3fc]">
                 <img
                   src={p.img}
@@ -63,7 +60,6 @@ export default function Produtos() {
                 />
               </div>
 
-              {/* Info */}
               <div className="p-3.5">
                 <p className="text-sm font-bold text-[#1a1f2e] leading-snug line-clamp-2">{p.nome}</p>
                 <p className="text-xs text-[#4a5568] mt-1">{p.sizes}</p>
@@ -81,7 +77,6 @@ export default function Produtos() {
           ))}
         </motion.div>
 
-        {/* CTA abaixo do grid */}
         <motion.div
           className="mt-10 flex flex-col items-center gap-3 text-center"
           variants={staggerItem}

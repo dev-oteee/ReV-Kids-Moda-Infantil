@@ -15,7 +15,6 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden min-h-[88svh] md:min-h-screen">
 
-      {/* Banner */}
       <motion.div
         className="absolute inset-0"
         initial={{ opacity: 0 }}
@@ -36,7 +35,6 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/20 to-transparent" />
       </motion.div>
 
-      {/* Conteúdo */}
       <div className="relative z-10 mx-auto flex min-h-[88svh] md:min-h-screen max-w-6xl flex-col justify-center px-6 pb-14 pt-24 md:px-8 md:pb-20">
         <motion.div
           className="w-full max-w-md"
