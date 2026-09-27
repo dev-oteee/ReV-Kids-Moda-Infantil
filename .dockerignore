@@ -1,0 +1,6 @@
+node_modules
+dist
+.git
+*.bat
+*.md
+build_*.txt
