@@ -6,14 +6,14 @@ const WA_LINK = 'https://chat.whatsapp.com/IsmICIEcUpt3tDGXumGf2W'
 
 // Dados reais extraídos do IG — ordem por engajamento real
 const produtos = [
-  { img: './img/post_04_92likes.webp', nome: 'Bermuda Cargo Bolso Frontal', sizes: '2 ao 16 anos' },
-  { img: './img/post_01_89likes.webp', nome: 'Bermuda Mauricinho Brim',     sizes: '2 ao 16 anos' },
-  { img: './img/post_02_71likes.webp', nome: 'Calça Cargo',                 sizes: '2 ao 16 anos' },
-  { img: './img/post_03_67likes.webp', nome: 'Bermuda Cargo com Zíper',     sizes: '2 ao 16 anos' },
-  { img: './img/post_05_54likes.webp', nome: 'Bermuda Brim Infantil',       sizes: '2 ao 14 anos' },
-  { img: './img/post_09_33likes.webp', nome: 'Bermuda Brim',                sizes: '2 ao 16 anos' },
-  { img: './img/post_06_38likes.webp', nome: 'Calça Cargo Brim',            sizes: '2 ao 16 anos' },
-  { img: './img/post_13_24likes.webp', nome: 'Bermuda Jogger',              sizes: '2 ao 16 anos' },
+  { img: '/img/post_04_92likes.webp', nome: 'Bermuda Cargo Bolso Frontal', sizes: '2 ao 16 anos' },
+  { img: '/img/post_01_89likes.webp', nome: 'Bermuda Mauricinho Brim',     sizes: '2 ao 16 anos' },
+  { img: '/img/post_02_71likes.webp', nome: 'Calça Cargo',                 sizes: '2 ao 16 anos' },
+  { img: '/img/post_03_67likes.webp', nome: 'Bermuda Cargo com Zíper',     sizes: '2 ao 16 anos' },
+  { img: '/img/post_05_54likes.webp', nome: 'Bermuda Brim Infantil',       sizes: '2 ao 14 anos' },
+  { img: '/img/post_09_33likes.webp', nome: 'Bermuda Brim',                sizes: '2 ao 16 anos' },
+  { img: '/img/post_06_38likes.webp', nome: 'Calça Cargo Brim',            sizes: '2 ao 16 anos' },
+  { img: '/img/post_13_24likes.webp', nome: 'Bermuda Jogger',              sizes: '2 ao 16 anos' },
 ]
 
 export default function Produtos() {

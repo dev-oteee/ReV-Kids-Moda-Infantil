@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Logo + endereço */}
           <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
             <div className="flex items-center gap-2.5">
-              <img src="./img/logo_perfil.webp" alt="R&V Kids" className="h-9 w-9 rounded-full object-cover" />
+              <img src="/img/logo_perfil.webp" alt="R&V Kids" className="h-9 w-9 rounded-full object-cover" />
               <div>
                 <p className="text-sm font-extrabold text-white">R&V Kids Moda Infantil</p>
                 <p className="text-xs text-white/40">Moda Center Santa Cruz · Setor Azul · Box 118</p>

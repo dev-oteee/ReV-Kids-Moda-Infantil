@@ -23,10 +23,10 @@ export default function Hero() {
         transition={{ duration: 1.0, ease: 'easeOut' }}
       >
         <picture>
-          <source media="(max-width: 767px)" srcSet="./img/bannermobile.webp" type="image/webp" />
-          <source media="(min-width: 768px)"  srcSet="./img/banner.webp"       type="image/webp" />
+          <source media="(max-width: 767px)" srcSet="/img/bannermobile.webp" type="image/webp" />
+          <source media="(min-width: 768px)"  srcSet="/img/banner.webp"       type="image/webp" />
           <img
-            src="./img/banner.webp"
+            src="/img/banner.webp"
             alt="R&V Kids Moda Infantil"
             className="h-full w-full object-cover object-[center_30%]"
             fetchpriority="high"

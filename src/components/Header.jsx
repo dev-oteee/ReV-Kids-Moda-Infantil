@@ -34,7 +34,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 shrink-0">
           <img
-            src="./img/logo_perfil.webp"
+            src="/img/logo_perfil.webp"
             alt="R&V Kids Moda Infantil"
             className="h-10 w-10 rounded-full object-cover ring-2 ring-[#e8eef8]"
           />

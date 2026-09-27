@@ -32,7 +32,7 @@ export default function VideoIntro({ onFinish }) {
           {/* Vídeo — contain para não cortar, centralizado */}
           <video
             ref={videoRef}
-            src="./img/manifestodia12.mp4"
+            src="/img/manifestodia12.mp4"
             className={`w-full max-h-screen object-contain transition-opacity duration-500 ${
               phase === 'playing' ? 'opacity-100' : 'opacity-0'
             }`}
@@ -49,7 +49,7 @@ export default function VideoIntro({ onFinish }) {
                 transition={{ duration: 0.4 }}
               >
                 <img
-                  src="./img/logo_perfil.webp"
+                  src="/img/logo_perfil.webp"
                   alt="R&V Kids"
                   className="h-24 w-24 rounded-full object-cover ring-4 ring-white/20"
                 />
