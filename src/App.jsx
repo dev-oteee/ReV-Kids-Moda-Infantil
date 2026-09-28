@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PasswordGate  from './components/PasswordGate'
 import VideoIntro    from './components/VideoIntro'
 import Header        from './components/Header'
 import Hero          from './components/Hero'
@@ -12,7 +13,8 @@ export default function App() {
   const [introVisible, setIntroVisible] = useState(true)
 
   return (
-    <>
+    /* Para remover a proteção por senha, basta apagar o <PasswordGate> e </PasswordGate> */
+    <PasswordGate>
       {introVisible && (
         <VideoIntro onFinish={() => setIntroVisible(false)} />
       )}
@@ -28,6 +30,6 @@ export default function App() {
         </main>
         <Footer />
       </div>
-    </>
+    </PasswordGate>
   )
 }
